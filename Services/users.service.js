@@ -97,7 +97,7 @@ async function authenticate(data){
         last_name: checkEmail.data[0].last_name,
         email:checkEmail.data[0].email,
         id: checkEmail.data[0].id,
-        contact_number:checkEmail.data[0].contact_number
+        contact_number:checkEmail.data[0].contact_number,
     }
     const result = compareSync(data.password,checkEmail.data[0].password);
     if(result){
