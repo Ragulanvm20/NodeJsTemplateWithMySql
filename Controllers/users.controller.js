@@ -7,7 +7,7 @@ const userService = require('../Services/users.service');
 router.post('/register', registerUser);
 router.post('/login', login);
 router.post('/forgotPassword', forgotPassword);
-router.get('/userDetails',getUserDetails)
+router.get('/userDetails',getUserDetails);
 
 
 function registerUser(req, res, next) {
